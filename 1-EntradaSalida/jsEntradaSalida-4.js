@@ -4,6 +4,21 @@
 */
 function mostrar()
 {
+	/*var numeroUno ;
+	var numeroDos ;
+
+	numeroUno = 666 ; //asignación destructiva
+	numeroDos = numeroUno ; 
+
+	numeroUno = numeroDos ;*/
+
+	var dato ;
+	
+	dato = prompt("Ingresar nombre y apellido"); //siempre retorna datos
+
+	document.getElementById('elNombre').value = dato;
+
+
 
 }
 
