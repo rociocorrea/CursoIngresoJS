@@ -9,7 +9,7 @@ function mostrarAumento()
     var y ;
     var resultado ;
 
-    var numUno = parseInt(importe) ;
+    importe = parseInt(importe) ;
 
     importe = document.getElementById('importe').value ; 
 

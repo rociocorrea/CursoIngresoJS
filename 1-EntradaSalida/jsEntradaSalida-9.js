@@ -7,8 +7,8 @@ function mostrarAumento()
     var sueldo ;
     var resultado ;
 
-    var numUno = parseInt(sueldo) ;
-    var numDos = parseInt(resultado) ;
+    sueldo = parseInt(sueldo) ;
+    resultado = parseInt(resultado) ;
 
     sueldo = document.getElementById('sueldo').value ;
 
