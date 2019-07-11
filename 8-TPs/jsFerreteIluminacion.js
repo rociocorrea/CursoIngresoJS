@@ -66,10 +66,11 @@ function CalcularPrecio ()
 
         precio = parseInt(cantidad) * precioLámpara;
 
-        x = parseInt(precio) * 30 ;
-        y = parseInt(precio) / 100 ;
+        x = (parseInt(precio) * 30)/ 100 ;
+        /*x = parseInt(precio) *  30;
+        y = parseInt(precio) / 100 ;*/
 
-        precioDescuento = parseInt(precio) - y ;
+        precioDescuento = parseInt(precio) - x ;
 
         document.getElementById('precioDescuento').value = precioDescuento;
         
@@ -78,10 +79,11 @@ function CalcularPrecio ()
     //CONICIÓN C, 25% descuento
     }else if(cantidad == 4 && marca == "ArgentinaLuz"  || marca == "FelipeLamparas"){
 
-        precio = parseInt(cantidad) * precioLámpara;
+        precio = parseInt(cantidad) * precioLámpara;  
 
-        x = parseInt(precio) * 25 ;
-        y = parseInt(precio) / 100 ;
+        x = (parseInt(precio) * 25)/ 100 ;
+        /* x = parseInt(precio) * 25 ;
+        y = parseInt(precio) / 100 ;*/
 
         precioDescuento = parseInt(precio) - y ;
 
@@ -93,8 +95,9 @@ function CalcularPrecio ()
 
         precio = parseInt(cantidad) * precioLámpara;
 
-        x = parseInt(precio) * 20 ;
-        y = parseInt(precio) / 100 ;
+        x = (parseInt(precio) * 20) / 100 ;
+        /*x = parseInt(precio) *  20;
+        y = parseInt(precio) / 100 ;*/
 
         precioDescuento = parseInt(precio) - y ;
 
@@ -106,8 +109,9 @@ function CalcularPrecio ()
 
         precio = parseInt(cantidad) * precioLámpara;
 
-        x = parseInt(precio) * 15 ;
-        y = parseInt(precio) / 100 ;
+        x = (parseInt(precio) * 15) / 100;
+        /*x = parseInt(precio) *  30;
+        y = parseInt(precio) / 100 ;*/
 
         precioDescuento = parseInt(precio) - y ;
 
@@ -120,8 +124,9 @@ function CalcularPrecio ()
 
         precio = parseInt(cantidad) * precioLámpara;
 
-        x = parseInt(precio) * 10 ;
-        y = parseInt(precio) / 100 ;
+        x = (parseInt(precio) * 10) / 100 ;
+        /*x = parseInt(precio) *  10;
+        y = parseInt(precio) / 100 ;*/
 
         precioDescuento = parseInt(precio) - y ;
 
