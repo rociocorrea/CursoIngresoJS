@@ -10,157 +10,54 @@ si es  “FelipeLamparas” se hace un descuento del 10 % y si es de otra marca 
 E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% 
 de ingresos brutos en informar del impuesto con el siguiente mensaje:
  ”Usted pago X de IIBB.”, siendo X el impuesto que se pagó. 
-
+ 
  */
 function CalcularPrecio () 
 {
-    var x ;
-    var y ;
-    var cantidad ;
-    var marca ;
-    var precio ;
-    var precioDescuento ;
-    var precioLámpara ;
+    var precioLampara;
+    var cantidad;
+    var marca;
+    var resultado;
+    var precioDescuento;
+    var desc;
 
+    /*desc = parseInt(desc);
+    desc = 1;*/
 
-    precioLámpara = 35 ;
-    cantidad = parseInt(cantidad) ;
-    precio = parseInt(precio) ;
-
-
-    cantidad = document.getElementById('Cantidad').value ;
-    marca = document.getElementById('Marca').value ;
-    document.getElementById('precioDescuento').value = precioDescuento;
-
-
-    precio = parseInt(cantidad) *  parseInt(precioLámpara);
+    precioLampara= parseInt(precioLampara);
+    precioLampara = 35;
     
-    //CONDICIÓN A, 50% descuento
-    if(cantidad >= 6){
+    cantidad= document.getElementById('Cantidad').value;
+    cantidad= document.getElementById('Marca').value;
+    document.getElementById('precioDescuento').value = precioDescuento; 
 
 
-        x = (parseInt(precio) * 50) / 100 ;
-
-        precioDescuento = parseInt(precio) - x ;
-
-        document.getElementById('precioDescuento').value = precioDescuento;
-        
-    
-    //CONDICIÓN B, 40% descuento
-    }else if(cantidad == 5 && marca == "ArgentinaLuz" ){
-
-        precio = parseInt(cantidad) * precioLámpara;
-
-        x = (parseInt(precio) * 40) / 100 ;
-        /*x = parseInt(precio) *  40;
-        y = parseInt(precio) / 100 ;*/
-
-        precioDescuento = parseInt(precio) - x ;
-
-        document.getElementById('precioDescuento').value = precioDescuento;
-        
-
-
-    //30% descuento
-    }else if(cantidad == 5){
-
-        precio = parseInt(cantidad) * precioLámpara;
-
-        x = (parseInt(precio) * 30)/ 100 ;
-        /*x = parseInt(precio) *  30;
-        y = parseInt(precio) / 100 ;*/
-
-        precioDescuento = parseInt(precio) - x ;
-
-        document.getElementById('precioDescuento').value = precioDescuento;
-        
-
-
-    //CONICIÓN C, 25% descuento
-    }else if(cantidad == 4 && marca == "ArgentinaLuz"  || marca == "FelipeLamparas"){
-
-        precio = parseInt(cantidad) * precioLámpara;  
-
-        x = (parseInt(precio) * 25)/ 100 ;
-        /* x = parseInt(precio) * 25 ;
-        y = parseInt(precio) / 100 ;*/
-
-        precioDescuento = parseInt(precio) - y ;
-
-        document.getElementById('precioDescuento').value = precioDescuento;
-        
-
-    //20% descuento
-    }else if(cantidad == 4 && marca != "ArgentinaLuz" || marca != "FelipeLamparas"){
-
-        precio = parseInt(cantidad) * precioLámpara;
-
-        x = (parseInt(precio) * 20) / 100 ;
-        /*x = parseInt(precio) *  20;
-        y = parseInt(precio) / 100 ;*/
-
-        precioDescuento = parseInt(precio) - y ;
-
-        document.getElementById('precioDescuento').value = precioDescuento;
-        
-
-    //CONDICIÓN D, 15% descuento 
-    }else if(cantidad == 3 && marca == "ArgentinaLuz"){
-
-        precio = parseInt(cantidad) * precioLámpara;
-
-        x = (parseInt(precio) * 15) / 100;
-        /*x = parseInt(precio) *  30;
-        y = parseInt(precio) / 100 ;*/
-
-        precioDescuento = parseInt(precio) - y ;
-
-        document.getElementById('precioDescuento').value = precioDescuento;
-        
-
-
-    //10% descuento
-    }else if(cantidad == 3 && marca == "FelipeLamparas"){
-
-        precio = parseInt(cantidad) * precioLámpara;
-
-        x = (parseInt(precio) * 10) / 100 ;
-        /*x = parseInt(precio) *  10;
-        y = parseInt(precio) / 100 ;*/
-
-        precioDescuento = parseInt(precio) - y ;
-
-        document.getElementById('precioDescuento').value = precioDescuento;
-        
-
-
-    //5% descuento
-    }else if(cantidad == 3){
-
-        precio = parseInt(cantidad) * precioLámpara;
-
-        x = parseInt(precio) * 5 ;
-        y = parseInt(precio) / 100 ;
-
-        precioDescuento = parseInt(precio) - y ;
-
-        document.getElementById('precioDescuento').value = precioDescuento;        
-
-
-
-    //CONDICIÓN E
-    }else if(precioDescuento > 120){
-        
-        x = parseInt(precio) * 10 ;
-        y = parseInt(precio) / 100 ;
-
-        precioImpuesto = parseInt(precio) + y ;
-
-        document.getElementById('precioDescuento').value = precioDescuento;
-
-        alert("Usted pagó " + precioImpuesto + " de IIBB.") ;
-
-
+    switch(marca)
+    {
+        case "ArgentinaLuz":
+            if(cantidad >= 6)
+            {
+                resultado = (precioLampara * 50) / 100;
+                precioDescuento = resultado;
+            }else if(cantidad == 5)
+            {
+                resultado = (precioLampara * 40 )/100;
+                precioDescuento= resultado;
+                
+            }          
+            break;
     }
-    
+    /* 
+    if(cantidad >= 6)
+    {
+        ...
+    }else if(cantidad ==5)
+    {
+        ...
+    }else if(cantidad == 4)
+    {
+        ...
+    }
+    */
+ 
 }
