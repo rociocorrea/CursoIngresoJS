@@ -1,26 +1,16 @@
 function mostrar()
-{
-	
+{	var numero;
 	var contador=0;
 	var acumulador=0;
 
 
+	contador = prompt("Ingrese un numero");
 
-	while(contador >6)
+	while(contador>5)
 	{
-		contador= prompt("Ingrese el primer número:");
-		contador = acumulador;
-		
-	contador= prompt("Ingrese el segundo número:");
-	contador = acumulador;
-	
-	contador= prompt("Ingrese el tercer número:");
-	contador = acumulador;
-	contador= prompt("Ingrese el cuarto número:");
-	contador = acumulador;
-	contador= prompt("Ingrese el último número:");
-	contador = acumulador;
-
+		contador++;
+		acumulador++;
+		numero = prompt("Ingrese un numero");
 
 	}
 
