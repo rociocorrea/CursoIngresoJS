@@ -1,11 +1,12 @@
 function mostrar()
 {
+    var clave;
+    clave = "utn750";
+    var clave = prompt("ingrese el número clave.");
 
-var clave = prompt("ingrese el número clave.");
-
-while(clave == "utn750")
+while(clave != "utn750")
 {
-    alert("ACCESO PERMITIDO");
+    clave = prompt("CLAVE ERRÓNEA, ingresar nuevamente:");
 }
 
 
