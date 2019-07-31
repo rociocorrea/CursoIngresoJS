@@ -5,7 +5,7 @@ function mostrar()
     sexo=prompt("Ingrese f o m: ");
 
     sexo=sexo.toLowerCase();
-    
+
     do{
         sexo=prompt("Ingrese f o m: ");
 
