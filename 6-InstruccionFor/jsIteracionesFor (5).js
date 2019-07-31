@@ -4,9 +4,9 @@ function mostrar()
 
     for(var i=0; ;i++){
         
-        infinito=prompt(i);
+        console.log(i);
 
-        if(infinito=="9"){
+        if(infinito==9){
             break;
         }
     }
