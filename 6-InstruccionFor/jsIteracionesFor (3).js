@@ -1,10 +1,16 @@
 function mostrar()
 {
-    var cantidad;
-    var cantidad = prompt("Ingrese el número de repeticiones");
+    var repeticiones;
+    repeticiones = prompt("Ingrese el número de repeticiones");
 
-    for(;;){
+    while(isNaN(repeticiones)){
+        repeticiones=prompt("ERROR");
+        repeticiones=parseInt(repeticiones);
+        
+    }
 
+    for(var i=repeticiones;i>0;i--){
+        console.log("Hola UTN FRA");
     }
 
 }//FIN DE LA FUNCIÓN
