@@ -24,7 +24,11 @@ function mostrar()
 		if(numero < 0)
 		{
 			resultado= (negativos += numero);
+		}else
+		{
+			resultado= (positivos += numero);
 		}
+
 		
 	
 	}

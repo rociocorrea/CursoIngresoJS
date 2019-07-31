@@ -26,17 +26,16 @@ function mostrar()
 			minimo = numero;
 			maximo = numero;
 
+		}else if(numero < minimo)
+		{
+			numero = minimo;
+
+		}else if(minimo > maximo)
+		{
+			maximo = minimo;
+		}
 
 	//ESTAN MAL LAS CONDICIONES, ME TIRA SOLO EL PRIMER NUM QUE INGRESO
-			if(numero < minimo)
-			{
-				numero = minimo;
-
-			}else if(numero > maximo)
-			{
-				maximo = minimo;
-			}
-		}
 		/*; minimo y maximo 
 		maximo 0 number
 		minimo = num
