@@ -1,6 +1,22 @@
 function mostrar()
 {
     var sexo;
+
+    sexo=prompt("Ingrese f o m: ");
+
+    sexo=sexo.toLowerCase();
+    
+    do{
+        sexo=prompt("Ingrese f o m: ");
+
+    }while(sexo!="f" && sexo!= "m");
+
+    document.getElementById('Sexo').value=sexo;
+    
+
+}//FIN DE LA FUNCIÓN
+
+/*var sexo;
     var sexo = prompt("ingrese f ó m .");
 
     //pasar a minúscula
@@ -14,5 +30,4 @@ function mostrar()
     }
 
     document.getElementById('Sexo').value=sexo;
-
-}//FIN DE LA FUNCIÓN
+*/

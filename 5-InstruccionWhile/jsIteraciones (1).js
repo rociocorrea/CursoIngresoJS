@@ -3,16 +3,24 @@ function mostrar()
 	var cont;
 	cont=0;
 
-	while(cont<10)
-	{
+	do{
 		cont++;
 		alert(cont);
-	}
+	}while(cont < 10);
+
 	
 }//FIN DE LA FUNCIÓN
 
+
 /*BUCLE WHILE- 
--utiliza la palabra reservada "continuo" como break-
+	var cont;
+	cont=0;
+
+	while(cont<10)
+	{
+		cont++;
+		alert(cont);	
+	}
 -sirve para verificar cosas-
 
 contador(cont) cuenta de uno en uno (o de dos en dos, etc)
