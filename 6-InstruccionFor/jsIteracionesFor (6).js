@@ -4,9 +4,9 @@ function mostrar()
     
     numero=prompt("Ingrese un número: ");
     
-    for(var i=1;i<numero;i++){
-        if(numero){
 
-        }
+    for(var i=1;i<numero;i++){
+
+
     }
 }//FIN DE LA FUNCIÓN
