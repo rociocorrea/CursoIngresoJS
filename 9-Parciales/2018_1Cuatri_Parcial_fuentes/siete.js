@@ -6,12 +6,14 @@ function mostrar()
     var contador;
     var contador1;
     var acumulador;
-    var maximo;
-    var minimo;
+    var notaMax;
+    var notaMin;
 
     contador=0;
     contador1=0;
     acumulador=0;
+    notaMax=10;
+    notaMin=0;
 
     /*SE PUEDE PEDIR LAS NOTAS Y LOS SEXOS UNA SOLA VEZ CON FOR
     for(var i=0;i<5;i++){}
@@ -33,41 +35,23 @@ function mostrar()
             nota=parseInt(nota);
         }
 
-        /*cuando el contador es 0, la nota es a su vez
-        máximo y mínimo*/
-        if(contador==0){
-
-            maximo=nota;
-            minimo=nota;
-
-        }else
-        {
-            /*cuando el contador NO es 0,
-            y la nota es menor al mínimo,
-            se convierte en el nuevo mínimo
-            */
-            if(nota<minimo)
-            {
-                minimo=nota;
-            }
-
-            /*si la nota es mayor al máximo,
-            se convierte en el nuevo máximo?
-            */    
-            if(nota>maximo)
-            {
-                maximo=nota;
-            }
-        
-        }
-        
         /*sumo las notas en el acumulador
         para después dividirlo por el contador y
-        hacer el promedio
-        */
-        acumulador+=nota;
+        hacer el promedio*/
+
+        if(nota<notaMax){
+            notaMin=nota;
+        }else
+        {
+            if(notaMin<notaMin){
+                notaMin=nota
+            }
+        }
+
+        
 
     }while(contador<5);
+    
     
     do{
         //pido sexo por prompt
@@ -83,11 +67,33 @@ function mostrar()
     
     }while(contador1<5);
 
-    alert("El promedio de las notas es: " + acumulador/contador + ". La nota más baja es: " + minimo + "");
-
-
-
-
+    acumulador+=nota;
+    alert("El promedio de las notas es: " + acumulador/contador + ". La nota más baja es: " + notaMin + "");
 
 
 }
+
+/*cuando el contador es 0, la nota es a su vez
+máximo y mínimo
+
+if(contador==0){
+    maximo=nota;
+    minimo=nota;
+}else
+{
+    cuando el contador NO es 0,y la nota es menor al mínimo,
+se convierte en el nuevo mínimo
+                        
+if(nota<minimo)
+{
+    minimo=nota;
+}
+            
+     si la nota es mayor al máximo,se convierte en el nuevo máximo?
+                           
+if(nota>maximo)
+{
+     maximo=nota;
+}
+}                   
+*/
