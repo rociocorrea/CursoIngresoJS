@@ -2,9 +2,7 @@ function mostrar()
 {
     var numero;
     var pares;
-    var cont;
-    cont=0;
-    
+
     numero=prompt("Ingrese un número: ");
 
     while(isNaN(numero)){
@@ -12,12 +10,12 @@ function mostrar()
         numero=parseInt(numero);
     }
 
-    for(var i=1;i<=numero;i++){
+    for(var i=1;i<numero;i++){
 
         pares=i%2;
 
         while(pares==0){
-            document.write(i + "<br>");
+            console.log(i);
         }
 
     }
