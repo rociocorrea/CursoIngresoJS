@@ -2,6 +2,8 @@ function mostrar()
 {
     var numero;
     var pares;
+    var cont;
+    cont=0;
     
     numero=prompt("Ingrese un número: ");
 
@@ -11,11 +13,11 @@ function mostrar()
     }
 
     for(var i=1;i<=numero;i++){
-        
+
         pares=i%2;
 
-        if(pares==0){
-            document.write( i + "<br>");
+        while(pares==0){
+            document.write(i + "<br>");
         }
 
     }
